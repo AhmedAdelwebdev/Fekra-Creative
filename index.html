@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full" style="scroll-behavior: smooth">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fekra Creative</title>
-    <script src="/_sdk/element_sdk.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -14,41 +12,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-
-<body class="h-full w-full font-inter bg-background text-gray-800 overflow-x-hidden">
+    
+<body class="h-full w-full font-inter bg-background text-gray-800 *:overflow-hidden">
     <!-- Hero Section -->
-    <section
-        class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-cyan-100 overflow-hidden">
+    <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-cyan-100 overflow-hidden">
         <!-- Hero Content -->
-        <div class="relative z-10 text-center max-w-4xl mx-auto px-6 animate-fade-in">
+        <div class="relative z-10 text-center max-w-4xl mx-auto px-8 animate-fade-in">
             <h1 class="font-montserrat font-black text-6xl md:text-7xl lg:text-8xl text-primary mb-6 leading-tight *:duration-300" data-aos="fade-down" data-aos-duration="1000">
-                <span>Fekra</span> <span class="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">Creative</span>
+                <span>Fekra</span> <span class="text-secondary">Creative</span>
             </h1>
-            <p class="text-xl md:text-2xl text-gray-600 mb-12 max-w-[35rem] lg:max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+            <p class="text-md sm:text-xl md:text-2xl text-gray-600 mb-12 max-w-[35rem] lg:max-w-3xl mx-auto leading-relaxed" data-aos="fade-up">
                 Creative Canva Templates for Brands, Creators & Digital Publishers
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up" data-aos-delay="400">
-                <a href="#portfolio" class="group block bg-gradient-to-r from-secondary to-accent text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-3">
-                    <span>View Portfolio</span>
-                    <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="fade-up">
+                <a href="#about" class="group block bg-gradient-to-r from-secondary to-accent text-primary px-8 py-4 rounded-2xl font-semibold text-lg hover:scale-105 transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-3">
+                    <span>Get Start</span>
+                    <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 duration-300"></i>
                 </a>
-                <a href="#services" class="group block bg-white text-primary px-8 py-4 rounded-2xl font-semibold text-lg shadow-2xl hover:shadow-3xl transform hover:-translate-y-1 transition-all duration-300 border border-gray-200 flex items-center justify-center gap-3">
+                <a href="#services" class="group block bg-white text-primary px-8 py-4 rounded-2xl font-semibold text-lg hover:scale-105 transform hover:-translate-y-1 transition-all duration-300 border border-gray-200 flex items-center justify-center gap-3">
                     <span>Our Services</span>
-                    <i data-lucide="sparkles" class="w-5 h-5"></i>
+                    <i data-lucide="sparkles" class="w-5 h-5 group-hover:translate-x-1 duration-300"></i>
                 </a>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="py-20 px-6" data-aos="zoom-in">
+    <section id="about" class="py-20 px-6" data-aos="zoom-in">
         <div class="max-w-6xl mx-auto">
-            <h2 class="font-montserrat font-bold text-4xl md:text-5xl text-primary text-center mb-16" data-aos="fade-in">
+            <h2 class="font-montserrat font-bold text-4xl md:text-5xl text-primary text-center mb-16" data-aos="zoom-in">
                 About Fekra Creative
             </h2>
             <div class="grid md:grid-cols-2 gap-8">
-                <div data-aos="fade-in" data-aos-duration="800"
-                    class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-secondary hover:shadow-xl transition-shadow">
+                <div data-aos="fade-up" data-aos-duration="800" class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-secondary hover:shadow-xl transition-shadow">
                     <div
                         class="w-16 h-16 bg-gradient-to-r from-secondary to-accent rounded-2xl flex items-center justify-center mb-6 shadow-md">
                         <i data-lucide="lightbulb" class="w-8 h-8 text-white"></i>
@@ -57,7 +53,7 @@
                     <p class="text-gray-600 leading-relaxed">Specialized Canva template studio creating high-quality,
                         ready-to-use templates for brands and creators.</p>
                 </div>
-                <div data-aos="fade-in" data-aos-duration="800"
+                <div data-aos="fade-up" data-aos-duration="800"
                     class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-secondary hover:shadow-xl transition-shadow">
                     <div
                         class="w-16 h-16 bg-gradient-to-r from-secondary to-accent rounded-2xl flex items-center justify-center mb-6 shadow-md">
@@ -72,20 +68,26 @@
     </section>
 
     <!-- Team Section -->
-    <section class="py-20 bg-white px-6" data-aos="zoom-in">
+    <section class="py-20 bg-white px-6">
         <div class="max-w-6xl mx-auto">
-            <h2 class="font-montserrat font-bold text-4xl md:text-5xl text-primary text-center mb-4" data-aos="fade-in">Our Team</h2>
-            <p class="text-gray-600 text-center mb-16 max-w-2xl mx-auto" data-aos="fade-in" data-aos-delay="200">The creative minds behind your stunning
-                templates</p>
+            <h2 class="font-montserrat font-bold text-4xl md:text-5xl text-primary text-center mb-4" data-aos="zoom-in">
+                Our Team
+            </h2>
+            <p class="text-gray-600 text-center mb-16 max-w-2xl mx-auto" data-aos="zoom-in">
+                The creative minds behind your stunning templates
+            </p>
             <div id="team-container" class="grid md:grid-cols-2 gap-6"></div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20 px-6" data-aos="zoom-in" data-aos-duration="800">
+    <section id="services" class="py-20 px-6">
         <div class="max-w-7xl mx-auto">
-            <h2 class="font-montserrat font-bold text-4xl md:text-5xl text-primary text-center mb-4" data-aos="text-7xl">Our Services</h2>
-            <p class="text-gray-600 text-center mb-16 max-w-2xl mx-auto" data-aos="fade-in" data-aos-delay="200">Professional template solutions for every need
+            <h2 class="font-montserrat font-bold text-4xl md:text-5xl text-primary text-center mb-4" data-aos="zoom-in">
+                Our Services
+            </h2>
+            <p class="text-gray-600 text-center mb-16 max-w-2xl mx-auto" data-aos="zoom-in">
+                Professional template solutions
             </p>
             <div id="services-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
         </div>
@@ -94,14 +96,18 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="py-20 bg-white px-6">
         <div class="max-w-7xl mx-auto">
-            <h2 class="font-montserrat font-bold text-4xl md:text-5xl text-primary text-center mb-4" data-aos="fade-left">Our Portfolio</h2>
-            <p class="text-gray-600 text-center mb-16 max-w-2xl mx-auto" data-aos="zoom-in" data-aos-delay="200">Explore our template collections</p>
+            <h2 class="font-montserrat font-bold text-4xl md:text-5xl text-primary text-center mb-4" data-aos="zoom-in">
+                Our Portfolio
+            </h2>
+            <p class="text-gray-600 text-center mb-16 max-w-2xl mx-auto" data-aos="zoom-in">
+                Explore our template collections
+            </p>
             <div id="portfolio-container"></div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gradient-to-br from-blue-50 to-cyan-100 px-6" data-aos="zoom-in" data-aos-duration="1000">
+    <section id="contact" class="py-20 bg-gradient-to-br from-blue-50 to-cyan-100 px-6">
         <div class="max-w-3xl mx-auto text-center flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-12">
             <h3 class="font-montserrat font-bold text-3xl text-primary" data-aos="slide-right" data-aos-duration="800">Contact Us</h3>
             <a href="mailto:FekraaCreative@gmail.com" data-aos="slide-left" data-aos-duration="800" class="inline-flex items-center justify-center gap-3 w-full sm:w-auto bg-gradient-to-r from-secondary to-accent text-white py-4 px-8 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
@@ -113,20 +119,11 @@
 
     <!-- Footer -->
     <footer class="bg-primary text-white text-center py-12 px-6">
-        <div class="max-w-6xl mx-auto">
+        <div class="max-w-6xl mx-auto text-gray-400">
             <p class="text-lg mb-4">© 2024 Fekra Creative. All rights reserved.</p>
-            <p class="text-gray-400">Professional Canva Templates for Modern Brands</p>
+            <p>Professional Canva Templates for Modern Brands</p>
         </div>
     </footer>
 
-    <!-- Modal -->
-    <div id="modal" class="fixed inset-0 w-screen h-screen bg-black/80 hidden items-center justify-center z-50 p-4">
-        <div id="modal-content" class="p-6 rounded-2xl w-fit overflow-hidden max-w-5xl">
-            <!-- Modal content will be loaded here -->
-        </div>
-    </div>
-
-    
 </body>
-
 </html>
