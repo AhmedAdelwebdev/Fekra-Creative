@@ -95,7 +95,7 @@ $(document).ready(function () {
                     ${items.map((item, index) => `
                         <div class="bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-lg cursor-pointer" data-aos="fade-up" data-aos-delay="200" onclick="openModal('${item.title}', '${category}')" >
                             <div class="h-fit max-h-72 overflow-hidden bg-gradient-to-br from-blue-50 to-cyan-100 rounded-t-xl flex items-center justify-center">
-                                <img src="${item.img || "./imgs/default_img.jpeg"}" class="object-cover w-full h-full hover:scale-105 duration-300" alt="${item.title}"/>
+                                <img src="${item.img || "https://github.com/AhmedAdelwebdev/Fekra-Creative/blob/main/imgs/default_img.jpeg"}" class="object-cover w-full h-full hover:scale-105 duration-300" alt="${item.title}"/>
                             </div>
                             <div class="p-4">
                                 <h4 class="font-montserrat font-semibold text-lg text-primary mb-2">${item.title}</h4>
@@ -140,7 +140,7 @@ function openModal(title, category) {
                 <button id="modal-close" class="absolute top-2 right-2 p-2 bg-gray-300/30 hover:bg-gray-100 rounded-lg transition-colors">
                     <i data-lucide="x" class="w-5 h-5"></i>
                 </button> 
-                <img src="${item.img || "./imgs/default_img.jpeg"}" class="rounded-lg object-cover size-full shadow-xl shadow-sky-500/30" alt="${item.title}"/>
+                <img src="${item.img || "https://github.com/AhmedAdelwebdev/Fekra-Creative/blob/main/imgs/default_img.jpeg"}" class="rounded-lg object-cover size-full shadow-xl shadow-sky-500/30" alt="${item.title}"/>
             </div>
         `);
         $('#modal').removeClass('hidden').addClass('flex');
@@ -188,3 +188,4 @@ function preventDevTools(e) {
 }
 
 preventDevTools();
+
