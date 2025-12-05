@@ -8,20 +8,23 @@ const siteData = {
   ],
   portfolio: {
     "Events & Conference Designs": [
-      { title: "One Health Annual Conference Poster", designerCredit: "Abdelhalim" },
-      { title: "Academic Speakers Line-up Graphic", designerCredit: "Abdelhalim" },
-      { title: "Educational Workshop Promo Design", designerCredit: "Abdelhalim" }
-    ],
-    "Medical & Healthcare Visuals": [
-      { title: "Medical Diagnostic Awareness Banner", designerCredit: "Abdelrahman" },
-      { title: "Dental Services Marketing Visual", designerCredit: "Abdelrahman" },
-      { title: "Healthcare Clinic Promo Card", designerCredit: "Abdelrahman" }
+      { title: "Conference Poster: One Health Annual Event", designerCredit: "Abdelhalim" },
+      { title: "Academic Speakers Lineup Visual", designerCredit: "Abdelhalim" },
+      { title: "Educational Workshop Promotion Design", designerCredit: "Abdelhalim" }
     ],
     "Brand Logos & Identity": [
+      { title: "Colorful Personal Branding Logo", designerCredit: "Ahmed Adel" },
+      { title: "Minimalist Spiral Logo Design", designerCredit: "Ali El-Desouky" },
+      { title: "Contemporary Typographic Logo", designerCredit: "Abdelhalim" },
       { title: "Vibrant Personal Identity Logo", designerCredit: "Ahmed Adel" },
-      { title: "Minimal Spiral Brand Mark", designerCredit: "Ali El-Desouky" },
-      { title: "Bold Modern Lettermark Logo", designerCredit: "Ahmed Adel" }
-    ]
+      { title: "Elegant Spiral Brand Symbol", designerCredit: "Abdelrahman" },
+      { title: "Modern Letter-Based Logo", designerCredit: "Ahmed Adel" }
+    ],
+    "Medical & Healthcare Visuals": [
+      { title: "Medical Diagnostics Awareness Banner", designerCredit: "Abdelrahman" },
+      { title: "Dental Clinic Marketing Graphic", designerCredit: "Ali El-Desouky" },
+      { title: "Healthcare Promotion Card Design", designerCredit: "Abdelrahman" }
+    ],
   }
 };
 
