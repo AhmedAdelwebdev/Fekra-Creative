@@ -1,28 +1,33 @@
 // ===== Site Data =====
 const siteData = {
   team: [
-    { name: "Ahmed Adel", role: "Primary Creator / Team Lead", initials: "AA" },
-    { name: "Ali El-Desouky", role: "Branding Specialist", initials: "AD" },
-    { name: "Abdelhalim", role: "Social Media Designer", initials: "AH" },
-    { name: "Abdelrahman", role: "Layout & Presentation Designer", initials: "AR" }
+    { name: "Ahmed Adel", role: "Creative Director / Lead Designer", initials: "AA" },
+    { name: "Abdelhalim", role: "Event & Social Media Designer", initials: "AH" },
+    { name: "Abdelrahman", role: "Healthcare & Presentation Designer", initials: "AR" },
+    { name: "Ali El-Desouky", role: "Brand Identity & Logo Designer", initials: "AD" }
   ],
   portfolio: {
-    "Events & Conference Designs": [
+    "Event Promotion & Conference Materials": [
       { title: "Conference Poster: One Health Annual Event", designerCredit: "Abdelhalim" },
       { title: "Academic Speakers Lineup Visual", designerCredit: "Abdelhalim" },
       { title: "Educational Workshop Promotion Design", designerCredit: "Abdelhalim" }
     ],
-    "Brand Logos & Identity": [
-      { title: "Colorful Personal Branding Logo", designerCredit: "Ahmed Adel" },
-      { title: "Minimalist Spiral Logo Design", designerCredit: "Ali El-Desouky" },
-      { title: "Contemporary Typographic Logo", designerCredit: "Abdelhalim" },
-      { title: "Vibrant Personal Identity Logo", designerCredit: "Ahmed Adel" },
-      { title: "Elegant Spiral Brand Symbol", designerCredit: "Abdelrahman" },
-      { title: "Modern Letter-Based Logo", designerCredit: "Ahmed Adel" }
+    "Corporate Branding & Identity Systems": [
+      { title: "Personal Brand Logo - Bright Smile (Child)", designerCredit: "Ahmed Adel" },
+      { title: "Advertising Design - Mental Comfort Campaign", designerCredit: "Ahmed Adel" },
+      { title: "Advertising Design - Digital Precision for Dentistry",designerCredit: "Ali El-Desouky" },
+      { title: "Advertising Design - Orthodontics", designerCredit: "Ali El-Desouky" },
+      { title: "Awareness Ad Design - Pain Management",designerCredit: "Abdelhalim" },
+      { title: "Dental Clinic Logo - Bright Dent", designerCredit: "Abdelhalim" },
+      { title: "Cover Design - Orthodontics and Treatment", designerCredit: "Abdelhalim" },
+      { title: "Cover Design - Bright Dent and Care Concepts", designerCredit: "Abdelhalim" },
+      { title: "Cover Design - Safety in Dentistry", designerCredit: "Abdelhalim" },
+      { title: "Advertising Design - Hope and Inspiration (HOPE)", designerCredit: "Abdelhalim" },
+      { title: "Advertising Design - Renewed Hope Campaign", designerCredit: "Abdelhalim" }
     ],
-    "Medical & Healthcare Visuals": [
+    "Healthcare Marketing & Medical Communication": [
       { title: "Medical Diagnostics Awareness Banner", designerCredit: "Abdelrahman" },
-      { title: "Dental Clinic Marketing Graphic", designerCredit: "Ali El-Desouky" },
+      { title: "Dental Clinic Marketing Graphic", designerCredit: "Abdelrahman" },
       { title: "Healthcare Promotion Card Design", designerCredit: "Abdelrahman" }
     ],
   }
@@ -74,11 +79,11 @@ $(document).ready(function() {
           ${items.map((it,i)=>`
             <li data-aos="fade-up" data-aos-delay="${i*80}">
               <div class="bg-white rounded-xl shadow-xl hover:shadow-lg transition overflow-hidden">
-                ${createImageHolder(`/imgs/${['A','C','B'][catIndex] + i}.jpg`)} 
+                ${createImageHolder(`/imgs/${['A','B','C'][catIndex] + i}.jpg`)} 
                 <div class="mt-3 p-3">
                   <h4 class="font-montserrat font-semibold text-lg text-secondary">${it.title}</h4>
                   <div class="mt-3 flex items-center justify-between gap-3">
-                    <p class="text-sm text-gray-500">By ${it.designerCredit}</p>
+                    <p class="text-sm text-gray-500 whitespace-nowrap">By ${it.designerCredit}</p>
                     <p class="text-xs text-gray-400">${cat}</p>
                   </div>
                 </div>
