@@ -74,7 +74,7 @@ $(document).ready(function() {
           ${items.map((it,i)=>`
             <li data-aos="fade-up" data-aos-delay="${i*80}">
               <div class="bg-white rounded-xl shadow-xl hover:shadow-lg transition overflow-hidden">
-                ${createImageHolder(`/imgs/${['A','B','C'][catIndex] + i}.jpg`)} 
+                ${createImageHolder(`/imgs/${['A','C','B'][catIndex] + i}.jpg`)} 
                 <div class="mt-3 p-3">
                   <h4 class="font-montserrat font-semibold text-lg text-secondary">${it.title}</h4>
                   <div class="mt-3 flex items-center justify-between gap-3">
