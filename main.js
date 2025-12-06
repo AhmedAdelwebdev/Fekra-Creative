@@ -31,22 +31,26 @@ initUI();
 
 
 // Render Team
-function displayTeam() {
-  $('#team-container').html(team.forEach((m, i) => `
-    <div class="bg-gradient-to-br from-white to-blue-50 rounded-2xl p-4 shadow-md border-2 border-primary hover:!scale-105 duration-100 hover:shadow-lg flex items-center gap-6" data-aos="flip-left" data-aos-delay="${i * 120}">
-      <div class="shrink-0 w-16 h-16 bg-gradient-to-r from-primary to-accent rounded-2xl flex items-center justify-center text-white font-montserrat font-bold text-xl shadow-lg">
-        ${m.initials}
+$(function() {
+  const teamBox = $('#team-container').empty();
+  team.forEach((m, i) => {
+    teamBox.append(`
+      <div class="bg-gradient-to-br from-white to-blue-50 rounded-2xl p-4 shadow-md border-2 border-primary hover:!scale-105 duration-100 hover:shadow-lg flex items-center gap-6" data-aos="flip-left" data-aos-delay="${i * 120}">
+        <div class="shrink-0 w-16 h-16 bg-gradient-to-r from-primary to-accent rounded-2xl flex items-center justify-center text-white font-montserrat font-bold text-xl shadow-lg">
+          ${m.initials}
+        </div>
+        <div>
+          <h3 class="font-montserrat font-bold text-lg text-secondary">${m.name}</h3>
+          <p class="text-gray-600 text-sm">${m.role}</p>
+        </div>
       </div>
-      <div>
-        <h3 class="font-montserrat font-bold text-lg text-secondary">${m.name}</h3>
-        <p class="text-gray-600 text-sm">${m.role}</p>
-      </div>
-    </div>
-  `));
+    `);
+  });
+  
   lucide.createIcons();
   AOS.refresh();
-} 
-displayTeam();
+});
+
 
 
 // Fetch Portfolio
